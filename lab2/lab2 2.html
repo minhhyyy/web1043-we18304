@@ -17,12 +17,12 @@
       let middleName = nameParts.join(" "); // ghép các phần tử không được lấy thành tên đệm
 
       if (gender.toLowerCase() === "nam") {
-        middleName = "Văn"; // kiểm tra xem giới tính nhập vào có phải là nam không nếu phải thì đổi tên đệm thành văn
+        middleName = "Văn"; // ktr xem giới tính nhập có phải là nam không nếu phải thì đổi tên đệm thành văn
       } else if (gender.toLowerCase() === "nữ") {
-        middleName = "Vẽ"; // kiểm tra xem nếu là nữ thì đổi họ đệm thành vẽ
+        middleName = "Vẽ"; // ktr xem nếu là nữ thì đổi họ đệm thành vẽ
       }
-
-      let newFullName = lastName + " " + middleName + " " + firstName; // cho ra tên hoàn chỉnh sau khi chỉnh sửa
+      // cho ra tên hoàn chỉnh sau khi chỉnh sửa
+      let newFullName = lastName + " " + middleName + " " + firstName;
 
       //in ra kết quả 
       console.log("Tên ban đầu : " + fullName.toUpperCase());

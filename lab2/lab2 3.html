@@ -8,9 +8,9 @@
   </head>
   <body>
     <script>
-      let a = parseFloat(prompt("Nhập độ dài cạnh a: "));//nhập a
-      let b = parseFloat(prompt("Nhập độ dài cạnh b: "));//nhập b
-      let c = parseFloat(prompt("Nhập độ dài cạnh c: "));//nhạp c
+      let a = parseFloat(prompt("Nhập độ dài cạnh a: ")); //nhập a
+      let b = parseFloat(prompt("Nhập độ dài cạnh b: ")); //nhập b
+      let c = parseFloat(prompt("Nhập độ dài cạnh c: ")); //nhạp c
 
       if (a + b > c && a + c > b && b + c > a) {
         // Nếu a, b, c là 3 cạnh của tam giác
@@ -19,10 +19,8 @@
         } else if (a === b || b === c || c === a) {
           console.log("Tam giác cân");
         } else if (
-          a * a + b * b === c * c ||
-          a * a + c * c === b * b ||
-          b * b + c * c === a * a
-        ) {
+          a * a + b * b === c * c || a * a + c * c === b * b || b * b + c * c === a * a)
+           {
           console.log("Tam giác vuông");
         } else {
           console.log("Tam giác thường");
